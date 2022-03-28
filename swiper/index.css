@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+ 
+}
+
+h3{
+  font-size: x-large;
+  font-weight: light;
+  margin: 0 0 .7rem;
+  padding: 0 3rem;
+}
+
+p{
+  text-align: left;
+  font-weight: lighter;
+  padding: 0 3rem;
+}
+
+.swiper-container{
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-slide{
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform .5s ease-in-out;
+}
+
+.left-slide > div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 1rem;
+  transition: transform .3s ease-in-out;
+}
+
+.right-slide{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform .5s ease-in-out;
+}
+
+.right-slide > div{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-btn{
+  position: fixed;
+  top: 50%;
+  left: 35%;
+  display: flex;
+  gap: none;
+  z-index: 2;
+}
+
+.btn{
+  background-color: gray;
+  border: none;
+  height: 1.5rem;
+  width: 1.7rem;
+  transform: translateX(-1.7rem);
+  cursor: pointer;
+  color: white;
+  text-shadow: .1rem .1rem .3rem white;
+}
+
+.btn--up{
+  border-radius: .3rem 0 0 .3rem;
+  margin-top: -1.5rem;
+}
+
+.btn--dn{
+  border-radius: 0 .3rem .3rem 0;
+}
